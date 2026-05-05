@@ -32,7 +32,7 @@ const removeTask = (taskList, title) => {
 
 // Inverts the specified task status (toggle button)
 const toggleTaskStatus = (task) => {
-	task.done ? (task.done = false) : (task.done = true);
+	task.done = task.done ? false : true;
 };
 
 const Status_filter = Object.freeze({
